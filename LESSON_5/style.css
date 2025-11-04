@@ -1,0 +1,26 @@
+.ggg {
+   font-family: 'Open Sans';
+   font-size: 20px;
+   line-height: 30px;
+   font-weight: 300;
+
+}
+
+.ddd {
+   text-align: center;
+}
+
+.sss {
+   text-decoration-style: wavy;
+   text-decoration-color: rgb(118, 33, 255);
+   text-decoration-line: overline;
+   color: blueviolet;
+   word-spacing: 30px;
+}
+.aaa {
+   letter-spacing: 5px;
+   text-decoration-style: solid;
+   text-decoration-color: rgb(0, 0, 0);
+   text-decoration-line: underline;
+}
+
