@@ -1,0 +1,67 @@
+.article {
+   font-family: ubuntu, oswald sans-serif;
+}
+
+.container {
+   max-width: 1250px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+.article__title {
+   margin: 80px 0px 40px 0px;
+   max-width: 596px;
+   font-weight: 600;
+   font-size: 48px;
+   line-height: 115%;
+   text-transform: uppercase;
+   font-family: oswald, sans-serif;
+}
+
+p {
+   font-family: ;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 130%;
+   color: var(--text-nabornyy);
+}
+
+.gym-img {
+   width: 100%;
+   margin: 80px 0px;
+}
+
+h2 {
+   font-family: ;
+   font-weight: 600;
+   font-size: 36px;
+   line-height: 115%;
+   text-transform: uppercase;
+
+}
+
+.Групповые {
+   max-width: 744px;
+}
+
+.p_grup {
+   margin: 40px 0 20px 0;
+}
+
+li {
+   margin: 12px 0;
+}
+li::marker {
+   color: rgb(39, 107, 255);
+   /* Маркеры окрасятся в красный цвет, текст останется без изменений */
+}
+
+video {
+   min-width: 1220px;
+   max-width: 1220px;
+   width: 100%;
+}
+
+.end {
+   margin-bottom: 40px;
+}
