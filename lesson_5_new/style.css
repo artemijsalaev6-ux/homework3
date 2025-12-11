@@ -1,0 +1,29 @@
+header {
+   margin: auto;
+
+}
+
+.flex-container {
+   display: flex;
+   margin: 25px;
+   justify-content: space-between;
+   max-width: 1220px;
+   margin: 20px auto;
+}
+
+.black {
+   background-color: black;
+   width: 50px;
+   height: 50px;
+}
+
+a {
+   margin: 5px;
+   color: black;
+}
+
+.border {
+   border-bottom: 2px solid rgba(139, 139, 139, 0.705);
+max-width: 1260px;
+margin: auto;
+}
