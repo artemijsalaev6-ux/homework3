@@ -263,7 +263,7 @@ section {
    display: flex;
 }
 
-.faq div h2 {
+.faq_section div h2 {
    margin-bottom: 40px;
    font-family: sans-serif;
    font-weight: 600;
@@ -296,7 +296,8 @@ details p {
 }
 
 summary {
-   padding: ;
+   cursor: pointer;
+   margin: 20px padding;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -320,7 +321,30 @@ summary::-webkit-details-marker {
 }
 
 details {
+
    margin-bottom: 20px;
    border-block: 1px solid #D3CBD9;
 
+}
+
+.faq123 {
+
+
+   width: 100%;
+}
+
+
+
+.faq_section {
+   position: relative;
+}
+
+.faq_section::before {
+   content: "";
+   position: absolute;
+   top: 432px;
+   width: 40%;
+   height: 48px;
+   background: url(../img/decor.svg);
+   z-index: -1 ;
 }
