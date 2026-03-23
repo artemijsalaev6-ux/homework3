@@ -1,0 +1,16 @@
+   @media(width > 768px) {
+      .burger {
+         display: none;
+      }
+   }
+
+   .burger__icons-menu,
+   .burger--open .burger__icons-cross {
+      display: block;
+   }
+
+
+   .burger__icons-cross,
+   .burger--open .burger__icons-menu {
+      display: none;
+   }
