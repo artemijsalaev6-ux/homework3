@@ -4,13 +4,24 @@
       }
    }
 
-   .burger__icons-menu,
-   .burger--open .burger__icons-cross {
-      display: block;
-   }
+   @media (width <=768px) {
+      .burger {
+         position: relative;
+         z-index: var(--layer-3);
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         width: 24px;
+         height: 24px;
+      }
 
+      .burger__icons-menu,
+      .burger--open .burger__icons-cross {
+         display: block;
+      }
 
-   .burger__icons-cross,
-   .burger--open .burger__icons-menu {
-      display: none;
+      .burger__icons-cross,
+      .burger--open .burger__icons-menu {
+         display: none;
+      }
    }

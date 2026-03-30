@@ -16,4 +16,9 @@
    /* transition */
    --transition-time: 0.2s;
 
+
+   /* laers */
+   --layer-1:1;
+   --layre-2:2;
+   --layer-3:3;
 }
