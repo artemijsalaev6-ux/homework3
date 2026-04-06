@@ -1,5 +1,6 @@
 .header {
    top: 0;
+z-index: var(--layre-2ч);
    right: 0;
    left: 0;
    position: fixed;

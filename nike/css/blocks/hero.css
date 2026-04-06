@@ -38,7 +38,7 @@
 .hero__title {
    font-family: sans-serif;
    font-weight: 600;
-   font-size: 128px;
+   font-size: clamp(48px, 1.786rem + 5.18vw, 128px);
    text-transform: uppercase;
    color: var(--main-color);
 }
@@ -66,16 +66,28 @@
    letter-spacing: 0.1em;
    text-transform: uppercase;
    color: var(--main-color);
+   transition: color var(--transition-time);
+}
+
+@media(any-hover: hover) {
+   .hero__detales:hover {
+      color: var(--accent-color);
+   }
 }
 
 .hero__title-accent {
-   
    color: transparent;
    -webkit-text-stroke: 3px var(--accent-color);
 }
 
-.hero__details-icon {
+.hero__details-icon1 {
    stroke: currentColor;
    width: 24px;
    height: 24px;
+}
+
+@media(any-hover: hover) {
+   .hero__detales :hover {
+      color: var(--accent-color);
+   }
 }
