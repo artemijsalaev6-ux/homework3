@@ -16,6 +16,37 @@ min-height: 200vh;
    margin: 0 auto;
 }
 
-.main {
-   
+
+a:focus-visible,
+button:focus-visible {
+   outline: 1px solid var(--accent-color);
+   outline-offset: 2px;
 }
+
+.title-md {
+font-weight: 600;
+font-size: 60px;
+text-transform: uppercase;
+color: var(--main-color);
+}
+
+.text-regular,
+.text-light{
+font-size: 16px;
+line-height: 140%;
+color: var(--main-color);
+}
+
+
+.text-regular {
+   font-weight: 400;
+}
+
+.text-light {
+   font-weight: 300;
+}
+
+img {
+   object-fit: cover;
+}
+
