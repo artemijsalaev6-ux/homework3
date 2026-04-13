@@ -1,12 +1,14 @@
 .page {
    font-family: var(--font-family);
    font-weight: 400;
-   color: var(--main-color );
+   color: var(--main-color);
+   scroll-behavior: smooth;
+   scroll-padding-top: 88px;
 }
 
 .page__body {
-   min-width: 375px;
-min-height: 200vh;
+   min-width: 375px; 
+   min-height: 200vh;
    background-color: var(--bg-color);
 }
 
@@ -24,17 +26,17 @@ button:focus-visible {
 }
 
 .title-md {
-font-weight: 600;
-font-size: 60px;
-text-transform: uppercase;
-color: var(--main-color);
+   font-weight: 600;
+   font-size: clamp(32px, 0.936rem + 4.54vw, 60px);
+   text-transform: uppercase;
+   color: var(--main-color);
 }
 
 .text-regular,
-.text-light{
-font-size: 16px;
-line-height: 140%;
-color: var(--main-color);
+.text-light {
+   font-size: 16px;
+   line-height: 140%;
+   color: var(--main-color);
 }
 
 
@@ -50,3 +52,6 @@ img {
    object-fit: cover;
 }
 
+.main {
+   height: 300vh;
+}
