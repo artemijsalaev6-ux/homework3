@@ -1,0 +1,28 @@
+.sizes__slider-wrapper {
+   border: 2px solid var(--accent-color);
+   border-radius: 12px;
+   box-shadow: 0 0 30px 5px var(--accent-glow-color),
+      inset 0 0 30px 5px var(--accent-glow-color);
+}
+
+@media(width > 768px) {
+   .sizes__slider-wrapper {
+      padding-top: 46px;
+      padding-bottom: 57px;
+      margin-bottom: 60px;
+   }
+}
+
+@media(width <=768px) {
+   .sizes__slider-wrapper {
+      padding-block: 50px;
+      margin-bottom: 40px;
+   }
+}
+
+.sizes-slider-inner {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+}

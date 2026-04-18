@@ -8,6 +8,8 @@
    <link rel="stylesheet" href="./css/index.css">
    <script type="module" defer src="./js/index.js"></script>
    <link rel="shortcut icon" href="https://www.nike.com/favicon.ico?v=1" type="image/x-icon">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
 </head>
 
 <body class="page__body">
@@ -62,8 +64,7 @@
                <h1 class="hero__title">Nike <span class="hero__title-accent">air</span> mag</h1>
             </header>
             <img class="hero__img" src="./img/nike air mag 1.png" alt="кросовок nike air mag" width="846px"
-               height="713px"
-               >
+               height="713px">
             <footer class="hero__footer">
                <a href="#" class="hero__detales">подробнее
                   <svg wight="24px" height="24px" class="hero__details-icon1">
@@ -93,6 +94,43 @@
                   </li>
                </ul>
             </div>
+         </div>
+      </section>
+      <section id="sizes" class="sizes">
+         <div class="container">
+            <h2 class="sizes__title title-md section-title">Размеры</h2>
+            <div class="sizes__slider-wrapper">
+               <div class="swiper sizes__slider">
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide">
+                        <div class="sizes-slider-inner">
+                           <picture>
+                              <source srcset="./img/sizes__slider/slide1.webp">
+                              <img height="375px" width="357px" src="./img/sizes__slider/slide1.png" alt="">
+                           </picture>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="sizes-slider-inner">
+                           <picture>
+                              <source srcset="./img/sizes__slider/slide2.webp">
+                              <img height="375px" width="408px" src="./img/sizes__slider/slide2.png" alt="">
+                           </picture>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="sizes-slider-inner">
+                           <picture>
+                              <source srcset="./img/sizes__slider/slide3.webp">
+                              <img height="375px" width="442px" src="./img/sizes__slider/slide3.png" alt="">
+                           </picture>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         </div>
          </div>
       </section>
    </main>
