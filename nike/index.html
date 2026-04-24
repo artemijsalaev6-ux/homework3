@@ -6,10 +6,11 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>nike air mag</title>
    <link rel="stylesheet" href="./css/index.css">
-   <script type="module" defer src="./js/index.js"></script>
+
    <link rel="shortcut icon" href="https://www.nike.com/favicon.ico?v=1" type="image/x-icon">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
+   <script type="module" defer src="./js/index.js"></script>
 </head>
 
 <body class="page__body">
@@ -68,7 +69,7 @@
             <footer class="hero__footer">
                <a href="#" class="hero__detales">подробнее
                   <svg wight="24px" height="24px" class="hero__details-icon1">
-                     <use wight="24px" height="24px" class="hero__details-icon" href="./icons/вфыю.svg">
+                     <use wight="24px" height="24px" class="hero__details-icon" href="./icons/вфыю.svg#arrow-right">
                      </use>
                   </svg>
                </a>
@@ -99,36 +100,89 @@
       <section id="sizes" class="sizes">
          <div class="container">
             <h2 class="sizes__title title-md section-title">Размеры</h2>
-            <div class="sizes__slider-wrapper">
-               <div class="swiper sizes__slider">
-                  <div class="swiper-wrapper">
-                     <div class="swiper-slide">
-                        <div class="sizes-slider-inner">
-                           <picture>
-                              <source srcset="./img/sizes__slider/slide1.webp">
-                              <img height="375px" width="357px" src="./img/sizes__slider/slide1.png" alt="">
-                           </picture>
+            <section class="product">
+               <div class="product__slider-wrapper">
+                  <button class="product-slider-button product-button-prew" aria-label="превидущий слайд">
+                     <svg wight="40px" height="40px">
+                        <use class="product__slider-button-icon" href="./icons/вфыю.svg#double-arrow"></use>
+                     </svg>
+                  </button>
+                  <div class="swiper product__slider">
+                     <button class="product-slider-button product-button-next" aria-label="следущий слайд">
+                        <svg wight="40px" height="40px">
+                           <use class="product__slider-button-icon" href="./icons/вфыю.svg#double-arrow"></use>
+                        </svg>
+                     </button>
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                           <div class="product-slider-inner">
+                              <picture>
+                                 <source srcset="./img/product__slider/slide1.webp">
+                                 <img class="product__slide-img" src="./img/product__slider/slide1.png" alt="">
+                              </picture>
+                           </div>
                         </div>
-                     </div>
-                     <div class="swiper-slide">
-                        <div class="sizes-slider-inner">
-                           <picture>
-                              <source srcset="./img/sizes__slider/slide2.webp">
-                              <img height="375px" width="408px" src="./img/sizes__slider/slide2.png" alt="">
-                           </picture>
+                        <div class="swiper-slide">
+                           <div class="product-slider-inner">
+                              <picture>
+                                 <source srcset="./img/product__slider/slide2.webp">
+                                 <img class="product__slide-img" src="./img/product__slider/slide2.png" alt="">
+                              </picture>
+                           </div>
                         </div>
-                     </div>
-                     <div class="swiper-slide">
-                        <div class="sizes-slider-inner">
-                           <picture>
-                              <source srcset="./img/sizes__slider/slide3.webp">
-                              <img height="375px" width="442px" src="./img/sizes__slider/slide3.png" alt="">
-                           </picture>
+                        <div class="swiper-slide">
+                           <div class="product-slider-inner">
+                              <picture>
+                                 <source srcset="./img/product__slider/slide3.webp">
+                                 <img class="product__slide-img" src="./img/product__slider/slide3.png" alt="">
+                              </picture>
+                           </div>
                         </div>
                      </div>
                   </div>
                </div>
-            </div>
+               <h3 class="product__title text-sm">Кроссовки <strong class="product__title-accent">Nike Air Mag</strong>
+                  Back To
+                  Future</h3>
+               <p class="product__discription text-light">
+                  Nike Air Mag — это кусочек киноистории и технологического прогресса. Если вы ищете уникальную пару
+                  кроссовок, которая станет не только стильным аксессуаром, но и ценным дополнением вашей коллекции,
+                  Nike Air Mag — идеальный выбор.
+               </p>
+               <div class="product__price text-sm">36 490 ₽</div>
+               <div class="product__sizes-wraper">
+                  <section class="product-sizes">
+                     <h4 class="product-sizes-title product__sizes-title-availability">Размеры в наличии</h4>
+                     <div class="product-sizes-list" data-sizes="list">
+                        <button class="product__sizes-button " title="выбрать размер"data-sizes="button">38</button>
+                        <button class="product__sizes-button " title="выбрать размер"data-sizes="button">40</button>
+                        <button class="product__sizes-button"
+                           title="выбрать размер"data-sizes="button">41</button>
+                        <button class="product__sizes-button " title="выбрать размер"data-sizes="button">42</button>
+                        <button class="product__sizes-button " title="выбрать размер"data-sizes="button">43</button>
+                        <button class="product__sizes-button " title="выбрать размер"data-sizes="button">44</button>
+                     </div>
+                     <div class="product__buy-wraper">
+                        <button class="product__buy-button">купить в один клик</button>
+                        <button class="product__cart-button" aria-label="добавить в корзину"
+                           title="добавить в корзину"><img src="./icons/cart-icon.svg" width="23px" height="23px"
+                              alt="корзина">
+                        </button>
+                     </div>
+                  </section>
+                  <section class="product-sizes">
+                     <h4 class="product-sizes-title product-sizes-title-disablet">Размеры под заказ</h4>
+                     <div class="product-sizes-list">
+                        <button class="product__sizes-button"data-sizes="button" disabled>36</button>
+                        <button class="product__sizes-button"data-sizes="button" disabled>37</button>
+                        <button class="product__sizes-button"data-sizes="button" disabled>43</button>
+                        <button class="product__sizes-button"data-sizes="button" disabled>46</button>
+                        <button class="product__sizes-button"data-sizes="button" disabled>47
+                     </div>
+                     <a href="#" class="product__sizes-link">заказать размеры</a>
+                  </section>
+               </div>
+            </section>
          </div>
          </div>
          </div>

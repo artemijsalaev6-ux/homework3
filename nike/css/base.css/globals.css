@@ -25,11 +25,19 @@ button:focus-visible {
    outline-offset: 2px;
 }
 
-.title-md {
-   font-weight: 600;
-   font-size: clamp(32px, 0.936rem + 4.54vw, 60px);
-   text-transform: uppercase;
+.title-md, 
+.title-sm {
+      font-weight: 600;
+      text-transform: uppercase;
    color: var(--main-color);
+}
+
+.title-md {
+   font-size: clamp(32px, 0.936rem + 4.54vw, 60px);
+}
+
+.text-sm {
+font-size: clamp(32px, 1.023rem + 2.04vw, 32px);
 }
 
 .text-regular,
@@ -47,6 +55,8 @@ button:focus-visible {
 .text-light {
    font-weight: 300;
 }
+
+
 
 img {
    object-fit: cover;
