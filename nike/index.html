@@ -11,6 +11,7 @@
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
    <script type="module" defer src="./js/index.js"></script>
+   <script type="module" defer src="./js/fslightbox.js"></script>
 </head>
 
 <body class="page__body">
@@ -154,13 +155,12 @@
                   <section class="product-sizes">
                      <h4 class="product-sizes-title product__sizes-title-availability">Размеры в наличии</h4>
                      <div class="product-sizes-list" data-sizes="list">
-                        <button class="product__sizes-button " title="выбрать размер"data-sizes="button">38</button>
-                        <button class="product__sizes-button " title="выбрать размер"data-sizes="button">40</button>
-                        <button class="product__sizes-button"
-                           title="выбрать размер"data-sizes="button">41</button>
-                        <button class="product__sizes-button " title="выбрать размер"data-sizes="button">42</button>
-                        <button class="product__sizes-button " title="выбрать размер"data-sizes="button">43</button>
-                        <button class="product__sizes-button " title="выбрать размер"data-sizes="button">44</button>
+                        <button class="product__sizes-button " title="выбрать размер" data-sizes="button">38</button>
+                        <button class="product__sizes-button " title="выбрать размер" data-sizes="button">40</button>
+                        <button class="product__sizes-button" title="выбрать размер" data-sizes="button">41</button>
+                        <button class="product__sizes-button " title="выбрать размер" data-sizes="button">42</button>
+                        <button class="product__sizes-button " title="выбрать размер" data-sizes="button">43</button>
+                        <button class="product__sizes-button " title="выбрать размер" data-sizes="button">44</button>
                      </div>
                      <div class="product__buy-wraper">
                         <button class="product__buy-button">купить в один клик</button>
@@ -173,11 +173,11 @@
                   <section class="product-sizes">
                      <h4 class="product-sizes-title product-sizes-title-disablet">Размеры под заказ</h4>
                      <div class="product-sizes-list">
-                        <button class="product__sizes-button"data-sizes="button" disabled>36</button>
-                        <button class="product__sizes-button"data-sizes="button" disabled>37</button>
-                        <button class="product__sizes-button"data-sizes="button" disabled>43</button>
-                        <button class="product__sizes-button"data-sizes="button" disabled>46</button>
-                        <button class="product__sizes-button"data-sizes="button" disabled>47
+                        <button class="product__sizes-button" data-sizes="button" disabled>36</button>
+                        <button class="product__sizes-button" data-sizes="button" disabled>37</button>
+                        <button class="product__sizes-button" data-sizes="button" disabled>43</button>
+                        <button class="product__sizes-button" data-sizes="button" disabled>46</button>
+                        <button class="product__sizes-button" data-sizes="button" disabled>47
                      </div>
                      <a href="#" class="product__sizes-link">заказать размеры</a>
                   </section>
@@ -185,6 +185,145 @@
             </section>
          </div>
          </div>
+         </div>
+      </section>
+      <seaction id="characteristics" class="characteristics">
+         <div class="container">
+            <h2 class="characteristics__title title-md seaction-title">
+               характеристики
+            </h2>
+            <div class="characteristics__video">
+               <picture><img width="1240px" height="600px" src="./img/characteristics-prewy.jpg" alt=""></picture>
+               <a data-fslightbox class="characteristics__video-play-link"
+                  href="https://youtu.be/ZLC-OgxnRek?si=ZM-ykYe44GApsaDu">
+                  <img class="characteristics__video-play-row" src="./icons/play-icon.svg" width="24px" height="17px"
+                     alt="запустить видео ">
+               </a>
+            </div>
+            <div class="characteristics__grid">
+               <article class="characteristics-card">
+                  <svg class="characteristics-card-icon" wight="56px" height="56">
+                     <use href="./icons/sprite-characteristics.svg#planet"></use>
+                  </svg>
+                  <h3 class="characteristics-card-title">Футуристический дизайн</h3>
+                  <p class="characteristics-card-text">Nike Air Mag выделяются своим уникальным и оригинальным дизайном,
+                     который сразу же привлекает внимание. Эта модель создана для тех, кто ценит стиль, вдохновленный
+                     наукой и фантастикой</p>
+               </article>
+               <article class="characteristics-card">
+                  <svg class="characteristics-card-icon" wight="56" height="56">
+                     <use href="./icons/sprite-characteristics.svg#laces"></use>
+                  </svg>
+                  <h3 class="characteristics-card-title">Автоматическая шнуровка</h3>
+                  <p class="characteristics-card-text">Инновационная система автоматической шнуровки обеспечивает
+                     идеальную фиксацию обуви на ноге без необходимости вручную завязывать шнурки, что значительно
+                     повышает комфорт</p>
+               </article>
+               <article class="characteristics-card">
+                  <svg class="characteristics-card-icon" wight="56" height="56">
+                     <use href="./icons/sprite-characteristics.svg#Restriction"></use>
+                  </svg>
+                  <h3 class="characteristics-card-title">Ограниченный выпуск</h3>
+                  <p class="characteristics-card-text">Nike Air Mag были выпущены в ограниченном количестве, что делает
+                     каждую пару желанным объектом для коллекционеров и любителей уникальных кроссовок</p>
+               </article>
+               <article class="characteristics-card">
+                  <svg class="characteristics-card-icon" wight="56" height="56">
+                     <use href="./icons/sprite-characteristics.svg#light"></use>
+                  </svg>
+                  <h3 class="characteristics-card-title">Встроенная подсветка</h3>
+                  <p class="characteristics-card-text">Благодаря светодиодной подсветке, кроссовки выглядят эффектно в
+                     темное время суток. Это придает им еще больше оригинальности и уникальности</p>
+               </article>
+               <article class="characteristics-card">
+                  <svg class="characteristics-card-icon" wight="56" height="56">
+                     <use href="./icons/sprite-characteristics.svg#shose"></use>
+                  </svg>
+                  <h3 class="characteristics-card-title">Комфорт и поддержка</h3>
+                  <p class="characteristics-card-text">Модель предлагает высокий уровень комфорта благодаря качественной
+                     амортизации и поддержке стопы, что делает их идеальными для длительного ношения</p>
+               </article>
+               <article class="characteristics-card">
+                  <svg class="characteristics-card-icon" wight="56" height="56">
+                     <use href="./icons/sprite-characteristics.svg#material"></use>
+                  </svg>
+                  <h3 class="characteristics-card-title">Современные материалы</h3>
+                  <p class="characteristics-card-text">Nike Air Mag изготовлены из высококачественных синтетических
+                     материалов, которые обеспечивают долговечность, устойчивость к износу и легкость в уходе</p>
+               </article>
+               <article class="characteristics-card">
+                  <svg class="characteristics-card-icon" wight="56" height="56">
+                     <use href="./icons/sprite-characteristics.svg#run"></use>
+                  </svg>
+                  <h3 class="characteristics-card-title">Хорошая сцепляемость</h3>
+                  <p class="characteristics-card-text">Подошва кроссовок обладает отличным сцеплением с различными
+                     поверхностями, что обеспечивает надежность при ходьбе и беге</p>
+               </article>
+               <article class="characteristics-card">
+                  <svg class="characteristics-card-icon" wight="56" height="56">
+                     <use href="./icons/sprite-characteristics.svg#diamond"></use>
+                  </svg>
+                  <h3 class="characteristics-card-title">Культовый статус</h3>
+                  <p class="characteristics-card-text">Nike Air Mag стали культовыми благодаря своему появлению в кино
+                     "Назад в будущее 2", что подчеркивает их историческую и культурную значимость</p>
+               </article>
+               <article class="characteristics-card">
+                  <svg class="characteristics-card-icon" wight="56px" height="56px">
+                     <use href="./icons/sprite-characteristics.svg#star"></use>
+                  </svg>
+                  <h3 class="characteristics-card-title">Яркое дополнение к любому образу</h3>
+                  <p class="characteristics-card-text">Кроссовки легко вписываются в различные стили одежды, позволяя
+                     создавать уникальные образы. Они могут дополнить как спортивный, так и повседневный стиль</p>
+               </article>
+
+            </div>
+         </div>
+      </seaction>
+      <section id="top-models" class="top-models">
+         <div class="container">
+            <h2 class="top-models__title section-title title-md">Другие <span
+                  class="top-models__title-accent">Топ</span> модели от Nike</h2>
+            <div class="top-models__products">
+               <article class="top-product">
+                  <a href="#" class="top-models__products-link">
+                     <div class="top-models__product-content">
+                        <h3 class="top-models__products-title">Nike Air Yeezy 2 "Red October"</h3>
+                        <svg wight="24px" height="24px">
+                           <use class="top-models__product-arrow" href="./icons/chevrons-right.svg"></use>
+                        </svg>
+                     </div>
+                     <picture class="top-models-product-wraper">
+                        <img src="./img/top-models/image 4.png" alt="" loading="lazy" width="190px" height="143px">
+                     </picture>
+                  </a>
+               </article>
+               <article class="top-product">
+                  <a href="#" class="top-models__products-link">
+                     <div class="top-models__product-content">
+                        <h3 class="top-models__products-title">Nike Air Yeezy 2 "Red October"</h3>
+                        <svg wight="24px" height="24px">
+                           <use class="top-models__product-arrow" href="./icons/chevrons-right.svg"></use>
+                        </svg>
+                     </div>
+                     <picture class="top-models-product-wraper">
+                        <img src="./img/top-models/image 4.png" alt="" loading="lazy" width="190px" height="143px">
+                     </picture>
+                  </a>
+               </article>
+               <article class="top-product">
+                  <a href="#" class="top-models__products-link">
+                     <div class="top-models__product-content">
+                        <h3 class="top-models__products-title">Nike Air Yeezy 2 "Red October"</h3>
+                        <svg wight="24px" height="24px">
+                           <use class="top-models__product-arrow" href="./icons/chevrons-right.svg"></use>
+                        </svg>
+                     </div>
+                     <picture class="top-models-product-wraper">
+                        <img src="./img/top-models/image 4.png" alt="" loading="lazy" width="190px" height="143px">
+                     </picture>
+                  </a>
+               </article>
+            </div>
          </div>
       </section>
    </main>
