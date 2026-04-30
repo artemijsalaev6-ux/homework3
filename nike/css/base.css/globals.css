@@ -8,7 +8,6 @@
 
 .page__body {
    min-width: 375px;
-   min-height: 200vh;
    background-color: var(--bg-color);
 }
 
@@ -25,10 +24,10 @@ button:focus-visible {
    outline-offset: 2px;
 }
 
-.title-md, 
+.title-md,
 .title-sm {
-      font-weight: 600;
-      text-transform: uppercase;
+   font-weight: 600;
+   text-transform: uppercase;
    color: var(--main-color);
 }
 
@@ -37,7 +36,7 @@ button:focus-visible {
 }
 
 .text-sm {
-font-size: clamp(32px, 1.023rem + 2.04vw, 32px);
+   font-size: clamp(32px, 1.023rem + 2.04vw, 32px);
 }
 
 .text-regular,
@@ -62,9 +61,7 @@ img {
    object-fit: cover;
 }
 
-.main {
-   height: 300vh;
-}
+
 
 @media(width > 576px) {
    section {
@@ -89,4 +86,8 @@ img {
    .section-title {
       margin-bottom: 30px;
    }
+}
+
+.product {
+   margin: 0;
 }

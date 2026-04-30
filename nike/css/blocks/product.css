@@ -280,3 +280,8 @@
       border-color: var(--accent-color);
    }
 }
+
+
+.product {
+padding: 0;
+}
