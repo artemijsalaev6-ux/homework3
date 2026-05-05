@@ -26,8 +26,13 @@
    color: var(--main-color);
 }
 
-@media(width <= 576px) {
+@media   (width <= 576px) {
+
+      .footer__container {
+         flex-direction: column;
+      }
    .footer__menu .menu__list {
       flex-direction: column;
+      align-items: flex-start;
    }
 }

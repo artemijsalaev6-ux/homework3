@@ -44,9 +44,9 @@
                <button class="header-burger burger  header__actions-button " aria-label="открыть меню"
                   aria-expanded="false">
                   <svg height="24px" wight="24px">
-                     <use class="burger__icons-menu" href="./icons/sprite.svg#menu-burger">
+                     <use class="burger__icons-menu" href="./icons/sprite.svg#burger">
                      </use>
-                     <use class="burger__icons-cross" href="./icons/sprite.svg#menu-cross">
+                     <use class="burger__icons-cross" href="./icons/sprite.svg#cross">
                      </use>
                   </svg>
                </button>
@@ -163,7 +163,8 @@
                         <button class="product__sizes-button " title="выбрать размер" data-sizes="button">44</button>
                      </div>
                      <div class="product__buy-wraper">
-                        <button class="product__buy-button">купить в один клик</button>
+                        <button class="product__buy-button" data-modal-button="buy" data-modal-speed="300">купить в один
+                           клик</button>
                         <button class="product__cart-button" aria-label="добавить в корзину"
                            title="добавить в корзину"><img src="./icons/cart-icon.svg" width="23px" height="23px"
                               alt="корзина">
@@ -419,7 +420,7 @@
          <a href="#" class="logo header__logo">
             <img src="./icons/logo-icon.svg" alt="лого найк" width="50px" height="20px">
          </a>
-         <nav class="footer__menu menu ">
+         <nav class="footer__menu ">
             <ul class="menu__list">
                <li class="menu__item"><a href="#air-mag" class="menu__link">Air Mag</a></li>
                <li class="menu__item"><a href="#sizes" class="menu__link">Размеры</a></li>
@@ -430,6 +431,31 @@
          <a href="+79292992929" class="footer__phone">+7 (929) 299-29-29</a>
       </div>
    </footer>
+   <div class="modal">
+      <div class=" modal__window modal__buy" data-modal-window="buy">
+      <button class="modal__close" aria-label="закрыть" title="закрыть" data-modal-close>
+         <svg height="24px" wight="24px">
+            <use class="burger__icons-cross" href="./icons/sprite.svg#cross">
+            </use>
+         </svg>
+      </button>
+      <div class="modal__content modal-buy-content">
+         <h3 class="modal__buy-title title-sm">заявка на заказ</h3>
+         <form class="modal__buy-form">
+            <label class="modal__buy-label" for="">
+               <input class="modal__buy-input" type="text" placeholder="ваше имя" required name="name">
+            </label>
+            <label class="modal__buy-label" for="">
+               <input class="modal__buy-input" type="tel" placeholder="phone" required name="phone">
+            </label>
+            <label class="modal__buy-label" for="">
+               <input class="modal__buy-input" type="email" placeholder="email" required name="email">
+            </label>
+            <button class="modal__buy-submit">отправить</button>
+         </form>
+      </div>
+   </div>
+   </div>
 </body>
 
 </html>

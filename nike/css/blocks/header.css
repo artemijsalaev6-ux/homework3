@@ -39,6 +39,7 @@ z-index: var(--layre-2);
       top: 0;
       bottom: 0;
       min-width: 297px;
+      padding: 144px 15px 20px 0px;
       z-index: var(--layre-2);
       padding-top: 143px;
       padding-right: 15px;
